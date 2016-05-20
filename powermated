@@ -30,7 +30,7 @@ def run(device):
     """
 
     logger = logging.getLogger('powermated')
-    logger.setLevel(logging.DEBUG)
+    logger.setLevel(logging.WARNING)
     logger.addHandler(logging.StreamHandler(sys.stdout))
 
     logger.debug('Listening on ' + device)
