@@ -22,14 +22,7 @@ def find_device():
     raise DeviceNotFound
 
 def execute(cmd, logger):
-
-    process = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    stdout, stderr = process.communicate()
-
-    if stdout:
-        logger.debug(stdout)
-    if stderr:
-        logger.debug(stderr)
+    process = subprocess.call(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
 
 def run(device):
