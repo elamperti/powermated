@@ -8,3 +8,4 @@ A simple driver to use the Griffin PowerMate on Linux
 ## Requirements
 - Python 2.7
 - [python-evdev](https://pypi.python.org/pypi/evdev)
+- [tendo](https://pypi.python.org/pypi/tendo)

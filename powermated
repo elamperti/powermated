@@ -5,6 +5,10 @@ import subprocess
 import sys
 import errno
 import logging
+from tendo import singleton
+
+# Remove this if you plan to use more than one wheel
+me = singleton.SingleInstance()
 
 VOLUME_CMD = ['amixer', '-M', '-D', 'pulse', 'sset', 'Master']
 MUTE_TOGGLE = 0
